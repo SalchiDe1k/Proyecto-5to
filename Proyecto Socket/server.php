@@ -17,13 +17,13 @@ while (true) {
     if ($pid == -1) {
         die('Error al crear el proceso hijo.');
     } elseif ($pid) {
-        // Proceso padre
+      
         socket_close($nuevo_cliente);
     } else {
-        // Proceso hijo
+       
         while (true) {
             $mensaje = socket_read($nuevo_cliente, 1024);
-            // Aquí puedes agregar la lógica para reenviar el mensaje a otros clientes
+            
         }
         exit();
     }
